@@ -1,0 +1,15 @@
+nav ul{
+    margin: 0;
+}
+
+nav ul li{
+    margin: 0
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
