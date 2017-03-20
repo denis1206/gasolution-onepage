@@ -1,5 +1,7 @@
 nav ul{
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li{
@@ -8,8 +10,4 @@ nav ul li{
 
 ul{
     list-style: none;
-}
-
-ul li{
-    display: inline-block;
 }
