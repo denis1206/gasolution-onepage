@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gasolution - Termos de Aceite</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/projeto.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="linha nav">
+            <div class="nav hamburguer">
+                <img src="img/menu.png" alt="Ícone Menu" width="25" height="25">
+            </div>
+            <div class="tres colunas">
+                <a href="index.html" class="nav logo">
+                    <img src="img/logo.png" alt="" width="128" height="67">
+                </a>
+            </div>
+            <div class="nove colunas nav menu">
+                <a href="index.html" class="nav link">Home</a>
+                <a href="sobre.html" class="nav link">Sobre</a>
+                <a href="login.html" class="nav link">Login</a>
+            </div>
+        </nav>
+
+        <div class="linha secao login">
+            <div class="seis colunas">
+                <form action="">
+                    <div class="linha">
+                        <div class="doze colunas">
+                            <label>Email</label>
+                            <input type="text" class="u-width-100">
+                        </div>
+
+                        <div class="doze colunas">
+                            <label>Senha</label>
+                            <input type="password" class="u-width-100">
+                        </div>
+
+                        <div class="doze colunas">
+                            <input type="submit" value="Enviar" class="botao destacado">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+     <script>
+        window.addEventListener('DOMContentLoaded', function(e){
+            document.querySelector('.nav.hamburguer')
+                .addEventListener('click', function(e){
+                    document.querySelector('.nav.menu').classList.toggle('aberto');
+                }, false);
+        }, false);
+    </script>
+</body>
