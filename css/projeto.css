@@ -18,17 +18,30 @@
 
 }
 
+.tituloDestacado{
+    background: #2f5880; /* Old browsers */
+    background: -webkit-linear-gradient(#2f5880 0%, #428fbd 100%);
+    background: -moz-linear-gradient(#2f5880 0%, #428fbd 100%);
+    background: -o-linear-gradient(#2f5880 0%, #428fbd 100%);
+    background: linear-gradient(#2f5880 0%, #428fbd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f5880', endColorstr='#428fbd',GradientType=0 ); /* IE6-9 */
+}
+
+.tituloDestacado h3{
+    color: #fff;
+}
+
 /* Seção */
 .secao{
-    /*margin-top: 3rem;
-    margin-bottom: 3rem;*/
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 750px){
-    .secao{
-        /*margin-top: 7rem;
-        margin-bottom: 7rem;*/
-    }
+    /*.secao{
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }*/
 }
 
 /* Navegação */
