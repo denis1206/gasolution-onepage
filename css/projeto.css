@@ -113,13 +113,14 @@ header.header{
     background: -o-linear-gradient(#2f5880 0%, #428fbd 100%);
     background: linear-gradient(#2f5880 0%, #428fbd 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f5880', endColorstr='#428fbd',GradientType=0 ); /* IE6-9 */
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.header.titulo,
-.header.texto{
+.header .titulo,
+.header .texto{
     color: #fff;
 }
 
@@ -238,9 +239,26 @@ a.rodape.texto:last-of-type{
     }
 }
 
-
 /* Login */
 .login{
     display: flex;
     justify-content: center;
+}
+
+/* Slider */
+.slide{
+    display: flex;
+}
+
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }

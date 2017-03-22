@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/projeto.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
 </head>
 <body>
     <div class="container">
@@ -30,14 +32,46 @@
     <header class="header">
         <div class="container">
             <div class="linha">
-                <div class="seis colunas">
+                <div class="owl-carousel owl-theme">
+                    <div class="slide">
+                        <div class="seis colunas">
+                            <h1 class="titulo">Slide 1</h1>
+                            <p class="texto">Mauris egestas, lectus sed faucibus semper, nunc nisi condimentum erat, in viverra ex libero sed velit. Praesent aliquet metus quis felis faucibus, id scelerisque dui efficitur. Aliquam erat volutpat. Donec laoreet at lacus non consectetur. Phasellus auctor, purus vel varius auctor, libero est lacinia nibh, eget efficitur dui lectus eget odio. Suspendisse in tincidunt urna. Cras malesuada, diam sit amet rutrum iaculis, lorem nunc luctus libero, in ultrices lorem lacus eu erat. Aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="seis colunas">
+                            <img src="img/dispositivo1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="seis colunas">
+                            <img src="img/dispositivo2.png" alt="">
+                        </div>
+
+                        <div class="seis colunas">
+                            <h1 class="titulo">Slide 2</h1>
+                            <p class="texto">Mauris egestas, lectus sed faucibus semper, nunc nisi condimentum erat, in viverra ex libero sed velit. Praesent aliquet metus quis felis faucibus, id scelerisque dui efficitur. Aliquam erat volutpat. Donec laoreet at lacus non consectetur. Phasellus auctor, purus vel varius auctor, libero est lacinia nibh, eget efficitur dui lectus eget odio. Suspendisse in tincidunt urna. Cras malesuada, diam sit amet rutrum iaculis, lorem nunc luctus libero, in ultrices lorem lacus eu erat. Aliquam erat volutpat.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="seis colunas">
+                            <h1 class="titulo">Slide 3</h1>
+                            <p class="texto">Mauris egestas, lectus sed faucibus semper, nunc nisi condimentum erat, in viverra ex libero sed velit. Praesent aliquet metus quis felis faucibus, id scelerisque dui efficitur. Aliquam erat volutpat. Donec laoreet at lacus non consectetur. Phasellus auctor, purus vel varius auctor, libero est lacinia nibh, eget efficitur dui lectus eget odio. Suspendisse in tincidunt urna. Cras malesuada, diam sit amet rutrum iaculis, lorem nunc luctus libero, in ultrices lorem lacus eu erat. Aliquam erat volutpat.</p>
+                        </div>
+
+                        <div class="seis colunas">
+                            <img src="img/dispositivo1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="seis colunas">
                     <h1 class="header titulo">
                        Um título qualquer para o slide
                     </h1>
                 </div>
                 <div class="seis colunas">
                     
-                </div>
+                </div>-->
             </div>
         </div>
     </header>
@@ -276,6 +310,19 @@
                     document.querySelector('.nav.menu').classList.toggle('aberto');
                 }, false);
         }, false);
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:false
+        })
     </script>
 </body>
 </html>
